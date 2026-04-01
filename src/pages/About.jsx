@@ -87,8 +87,7 @@ export default function About() {
           <div className="philosophy">
             <p className="pg-label">Philosophy</p>
             <p className="philosophy-q">
-              "I build with purpose. Every line of code should solve a real
-              problem — not just exist because it can."
+              "Coding the future one line at a time"
             </p>
             <p className="label philosophy-cite">— Ernest Mpiani</p>
           </div>

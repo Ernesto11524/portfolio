@@ -28,9 +28,9 @@ export default function Footer() {
           {/* Contact */}
           <div className="footer__contact">
             <p className="footer__nav-head label">Connect</p>
-            <a href="mailto:ernest.mpiani@email.com" className="footer__link">ernest.mpiani@email.com</a>
+            <a href="mailto:ernestmpiani15@gmail.com" className="footer__link">ernestmpiani15@gmail.com</a>
             <a href="https://github.com/Ernesto11524" target="_blank" rel="noopener noreferrer" className="footer__link">GitHub →</a>
-            <a href="https://linkedin.com/in/ernest-524" target="_blank" rel="noopener noreferrer" className="footer__link">LinkedIn →</a>
+            <a href="https://linkedin.com/in/ernest524" target="_blank" rel="noopener noreferrer" className="footer__link">LinkedIn →</a>
             <div className="footer__avail">
               <span className="footer__avail-dot" />
               <span className="label">Open to Opportunities</span>
