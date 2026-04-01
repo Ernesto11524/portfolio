@@ -1,0 +1,71 @@
+.footer {
+  border-top: 1px solid var(--charcoal);
+  margin-top: 120px;
+  background: var(--ink);
+  position: relative; z-index: 1;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 60px;
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--charcoal);
+}
+
+/* Brand col */
+.footer__name {
+  font-family: var(--display);
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--off); letter-spacing: 0.03em;
+  display: block; margin-bottom: 12px;
+  transition: color 0.2s;
+}
+.footer__name:hover { color: var(--white); }
+.footer__sub { font-size: 0.87rem; color: var(--muted); margin-bottom: 10px; line-height: 1.6; }
+.footer__uni { color: var(--dim); margin-top: 4px; }
+
+/* Nav / Connect cols */
+.footer__nav-head { margin-bottom: 20px; color: var(--dim); }
+.footer__nav, .footer__contact {
+  display: flex; flex-direction: column; gap: 0;
+}
+.footer__link {
+  font-size: 0.88rem; color: var(--muted);
+  padding: 9px 0;
+  border-bottom: 1px solid var(--charcoal);
+  transition: color 0.2s;
+  word-break: break-all;
+}
+.footer__link:last-of-type { border-bottom: none; }
+.footer__link:hover { color: var(--off); }
+
+/* Availability */
+.footer__avail {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 16px; padding: 12px 0;
+}
+.footer__avail-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--silver);
+  animation: pulse 2.5s infinite;
+  flex-shrink: 0;
+}
+.footer__avail .label { color: var(--muted); }
+
+/* Bottom bar */
+.footer__bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 0 24px; flex-wrap: wrap; gap: 8px;
+}
+.footer__bottom-right { color: var(--mid); }
+
+@media (max-width: 768px) {
+  .footer__inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .footer__inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .footer__bottom-right { display: none; }
+}
