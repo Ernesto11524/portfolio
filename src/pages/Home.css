@@ -18,7 +18,7 @@
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: 1fr 480px;
   align-items: center;
   gap: 80px;
   padding: 60px 0 80px;
@@ -44,19 +44,6 @@
   line-height: 0.95;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-}
-
-.profile__photo {
-  /* existing styles stay, add: */
-  overflow: hidden;
-}
-
-.profile__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 50%;
 }
 
 /* role typewriter */
@@ -110,7 +97,7 @@
 ═══════════════════════════════════════ */
 .profile {
   position: relative;
-  width: 320px; height: 320px;
+  width: 460px; height: 460px;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto;
 }
@@ -126,24 +113,30 @@
   animation: spin 12s linear infinite;
 }
 .profile__ring--2 {
-  inset: 18px;
+  inset: 22px;
   border-color: transparent;
   border-bottom-color: var(--charcoal);
   border-left-color: var(--mid);
   animation: spinReverse 8s linear infinite;
 }
 .profile__photo {
-  width: 240px; height: 240px;
+  width: 360px; height: 360px;
   border-radius: 50%;
   background: var(--dark);
   border: 1px solid var(--charcoal);
   display: flex; align-items: center; justify-content: center;
   position: relative; z-index: 2;
+  overflow: hidden;
 }
 .profile__initials {
   font-family: var(--display);
-  font-size: 4rem; font-weight: 700;
+  font-size: 5.5rem; font-weight: 700;
   color: var(--silver); letter-spacing: 0.06em;
+}
+.profile__img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  border-radius: 50%;
 }
 
 /* scroll hint */
@@ -259,9 +252,9 @@
   .hero__bio { margin: 0 auto 36px; }
   .hero__actions { justify-content: center; }
   .hero__stats { justify-content: center; }
-  .profile { width: 240px; height: 240px; }
-  .profile__photo { width: 180px; height: 180px; }
-  .profile__initials { font-size: 3rem; }
+  .profile { width: 300px; height: 300px; }
+  .profile__photo { width: 230px; height: 230px; }
+  .profile__initials { font-size: 3.5rem; }
   .proj-row { grid-template-columns: 40px 1fr; }
   .proj-row .status-badge { display: none; }
 }
