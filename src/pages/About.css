@@ -5,13 +5,13 @@
 /* ── Main layout ── */
 .about-main {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 340px 1fr;
   gap: 80px; margin-bottom: 80px; align-items: start;
 }
 
 /* ── Avatar ── */
 .about-avatar {
-  position: relative; width: 210px; height: 210px;
+  position: relative; width: 320px; height: 320px;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 32px;
 }
@@ -21,21 +21,29 @@
 .av-ring--1 {
   inset: 0; border-color: transparent;
   border-top-color: var(--mid);
-  animation: spin 7s linear infinite;
+  border-right-color: var(--charcoal);
+  animation: spin 10s linear infinite;
 }
 .av-ring--2 {
-  inset: 16px; border-color: transparent;
+  inset: 20px; border-color: transparent;
   border-bottom-color: var(--charcoal);
-  animation: spinReverse 5s linear infinite;
+  border-left-color: var(--mid);
+  animation: spinReverse 7s linear infinite;
 }
 .av-photo {
-  width: 165px; height: 165px; border-radius: 50%;
+  width: 255px; height: 255px; border-radius: 50%;
   background: var(--dark); border: 1px solid var(--charcoal);
-  display: flex; align-items: center; justify-content: center; z-index: 2;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; z-index: 2; overflow: hidden;
+}
+.av-img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  border-radius: 50%;
 }
 .av-initials {
   font-family: var(--display);
-  font-size: 2.6rem; font-weight: 700;
+  font-size: 3.8rem; font-weight: 700;
   color: var(--silver); letter-spacing: 0.06em;
 }
 
@@ -105,4 +113,94 @@
 }
 @media (max-width: 480px) {
   .skills-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── Intro text ── */
+.about-intro {
+  font-size: 1rem; color: var(--muted); line-height: 1.85; margin-bottom: 22px;
+}
+
+/* ── Journey timeline ── */
+.journey { display: flex; flex-direction: column; gap: 0; margin-bottom: 0; }
+
+.journey-item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 28px;
+  padding-bottom: 40px;
+}
+.journey-item:last-child { padding-bottom: 0; }
+.journey-item:last-child .journey-item__line { display: none; }
+
+.journey-item__left {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.journey-item__icon {
+  font-size: 1.4rem;
+  width: 48px; height: 48px;
+  border: 1px solid var(--charcoal);
+  background: var(--ink);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.journey-item__line {
+  width: 1px; flex: 1;
+  background: var(--charcoal);
+  min-height: 40px;
+}
+
+.journey-item__body { padding-top: 10px; }
+.journey-item__meta {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 12px; flex-wrap: wrap;
+}
+.journey-item__period { color: var(--dim); }
+.journey-item__place {
+  font-family: var(--display);
+  font-size: 1rem; font-weight: 600;
+  color: var(--silver); letter-spacing: 0.03em;
+}
+.journey-item__text {
+  font-size: 0.95rem; color: var(--muted); line-height: 1.82;
+}
+
+/* ── Hobbies ── */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px; background: var(--charcoal);
+  border: 1px solid var(--charcoal);
+  margin-bottom: 0;
+}
+.hobby-card {
+  background: var(--black);
+  padding: 32px 24px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 14px; text-align: center;
+  transition: background 0.2s;
+}
+.hobby-card:hover { background: var(--ink); }
+.hobby-card__icon { font-size: 2rem; }
+.hobby-card__label {
+  font-family: var(--display);
+  font-size: 0.95rem; font-weight: 600;
+  color: var(--silver); letter-spacing: 0.04em;
+}
+
+/* ── Responsive updates ── */
+@media (max-width: 960px) {
+  .about-main { grid-template-columns: 1fr; gap: 48px; }
+  .about-left  { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .about-avatar { width: 260px; height: 260px; }
+  .av-photo { width: 205px; height: 205px; }
+  .av-initials { font-size: 3rem; }
+  .info-table { width: 100%; max-width: 380px; }
+  .hobbies-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 580px) {
+  .journey-item { grid-template-columns: 44px 1fr; gap: 18px; }
+  .journey-item__icon { width: 40px; height: 40px; font-size: 1.1rem; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .hobbies-grid { grid-template-columns: repeat(2, 1fr); }
 }
