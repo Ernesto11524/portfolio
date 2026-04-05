@@ -45,10 +45,10 @@ export default function Certifications() {
           <div className="next-up__head">
             <p className="pg-label">Always Learning</p>
             <h2 className="next-up__title">What's next.</h2>
-            <p className="next-up__sub">Actively pursuing more certifications in cloud, ML, and system design.</p>
+            <p className="next-up__sub">Going deeper into data science, shipping real projects, and venturing into hardware with microprocessors and embedded systems.</p>
           </div>
           <div className="next-up__items">
-            {['AWS Cloud Practitioner','TensorFlow Developer Certificate','MongoDB Developer Path'].map(label => (
+            {['Deep dive into Data Science & Machine Learning','Build and ship real-world projects','Explore microprocessors & embedded systems','Build hardware projects with microcontrollers'].map(label => (
               <div key={label} className="next-item">
                 <span className="next-item__dot" />
                 <span className="next-item__label">{label}</span>
