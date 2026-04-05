@@ -35,7 +35,7 @@ export default function Certifications() {
         <div className="reveal pg-hero" ref={h}>
           <p className="pg-label">Credentials</p>
           <h1 className="pg-title">Certified.<br /><em>Qualified.</em></h1>
-          <p className="pg-sub">Professional certifications validating my skills in backend development, data science, and virtual assistance.</p>
+          <p className="pg-sub">Professional certifications validating my skills in backend development, data science, virtual assistance and professional foundations.</p>
         </div>
         <div className="certs-list">
           {certifications.map((c, i) => <CertCard key={c.id} cert={c} delay={i * 0.1} />)}

@@ -47,7 +47,7 @@ export default function Projects() {
         <div className="projects-more">
           <p className="label projects-more__label">More In Progress</p>
           <p className="projects-more__text">Always building. Check GitHub for the latest updates.</p>
-          <a href="https://github.com/ernestmpiani" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+          <a href="https://github.com/Ernesto11524" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
             GitHub Profile →
           </a>
         </div>
