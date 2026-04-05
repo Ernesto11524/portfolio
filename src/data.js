@@ -7,7 +7,7 @@ export const personal = {
   email:       "ernestmpiani15@gmail.com",
   github:      "https://github.com/Ernesto11524",
   linkedin:    "https://linkedin.com/in/ernest-524",
-  formspreeId: "YOUR_FORMSPREE_ID",
+  formspreeId: "mzdkyboy",
   bio: [
     "I'm a 3rd-year Computer Engineering student at KNUST, Ghana, building at the intersection of backend systems, data science, and intelligent automation.",
     "I write clean, scalable backend code, extract insights from complex datasets, and help people work smarter through virtual assistance. Every project I ship is a step toward building technology that actually matters.",
