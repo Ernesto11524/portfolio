@@ -85,7 +85,7 @@ export default function Contact() {
               <div className="info-block__rows">
                 <a href={personal.github} target="_blank" rel="noopener noreferrer" className="social-row">
                   <span className="social-row__name">GitHub</span>
-                  <span className="social-row__handle">@ernestmpiani →</span>
+                  <span className="social-row__handle">@Ernesto11524 →</span>
                 </a>
                 <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="social-row">
                   <span className="social-row__name">LinkedIn</span>

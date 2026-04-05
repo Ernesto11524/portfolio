@@ -4,7 +4,7 @@ export const personal = {
   tagline:     "Backend Developer · Data Scientist · Virtual Assistant",
   university:  "KNUST, Ghana",
   year:        "3rd Year",
-  email:       "ernest.mpiani@email.com",
+  email:       "ernestmpiani15@gmail.com",
   github:      "https://github.com/Ernesto11524",
   linkedin:    "https://linkedin.com/in/ernest524",
   formspreeId: "mzdkyboy",
