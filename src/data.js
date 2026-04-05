@@ -5,9 +5,9 @@ export const personal = {
   university:  "KNUST, Ghana",
   year:        "3rd Year",
   email:       "ernest.mpiani@email.com",
-  github:      "https://github.com/ernestmpiani",
-  linkedin:    "https://linkedin.com/in/ernestmpiani",
-  formspreeId: "YOUR_FORMSPREE_ID",
+  github:      "https://github.com/Ernesto11524",
+  linkedin:    "https://linkedin.com/in/ernest524",
+  formspreeId: "mzdkyboy",
   bio: [
     "I'm a 3rd-year Computer Engineering student at KNUST, Ghana, building at the intersection of backend systems, data science, and intelligent automation.",
     "I write clean, scalable backend code, extract insights from complex datasets, and help people work smarter through virtual assistance. Every project I ship is a step toward building technology that actually matters.",
