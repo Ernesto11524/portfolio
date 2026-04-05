@@ -11,6 +11,16 @@ function CertCard({ cert, delay }) {
         <p className="label cert-card__meta">{cert.issuer} · {cert.date}</p>
         <h2 className="cert-card__title">{cert.title}</h2>
         <p className="cert-card__desc">{cert.description}</p>
+        {cert.link && cert.link !== 'YOUR_GOOGLE_DRIVE_LINK_1' && cert.link !== 'YOUR_GOOGLE_DRIVE_LINK_2' && cert.link !== 'YOUR_GOOGLE_DRIVE_LINK_3' && (
+          <a
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cert-card__btn"
+          >
+            View Certificate →
+          </a>
+        )}
       </div>
       <div className="cert-card__line" />
     </div>
